@@ -1,0 +1,11 @@
+export const PATH = 'path';
+export const TITLE = 'title';
+export const MULTI_SELECT = 'multi-select';
+export const REPORT_MODE = 'report-mode';
+export const DROP_DOWN = 'drop-down';
+export const REPORT_TYPES = 'types';
+export const TIME = 'time';
+export const REPORT_FILTER_VALUE_BOTH = 'BOTH';
+export const HAS_PIN = 'has-pin';
+export const INVOICE_ID = 'invoice_id';
+export const SUCCESS = 'success';

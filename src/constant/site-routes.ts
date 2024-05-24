@@ -1,0 +1,1 @@
+export const CONTACT_WITH_SUPPORT = '/contact';
