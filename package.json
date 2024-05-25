@@ -22,7 +22,8 @@
     "test": "jest",
     "format": "prettier -w .",
     "format:check": "prettier -c .",
-    "postbuild": "next-sitemap --config next-sitemap.config.js"
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/react": "1.7.18",
@@ -42,6 +43,7 @@
     "highcharts": "11.4.1",
     "highcharts-react-official": "3.2.1",
     "holy-loader": "2.2.10",
+    "husky": "^9.0.11",
     "js-cookie": "3.0.5",
     "js-sha1": "0.7.0",
     "mobile-detect": "1.4.5",
