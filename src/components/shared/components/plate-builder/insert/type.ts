@@ -1,6 +1,0 @@
-export enum INPUT_SLOT_TYPE {
-  FIRST = 'FIRST',
-  LETTER = 'LETTER',
-  LAST = 'LAST',
-  IDENTIFIER = 'IDENTIFIER',
-}

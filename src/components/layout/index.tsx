@@ -5,11 +5,8 @@ import { isPWA } from '@/lib/helper';
 
 import Container from '@/components/@base/container';
 import Toast from '@/components/@base/toast';
-import Metrics from '@/components/layout/@shared/metrics';
-import Default from '@/components/layout/default';
 import PWA from '@/components/layout/pwa';
 import CommonModal from '@/components/shared/components/common-modal';
-import OtpLogin from '@/components/shared/components/otp-login';
 
 type Props = {
   children: ReactNode;
@@ -61,10 +58,8 @@ export default async function Layout({ children }: Props) {
       className='relative m-auto flex min-h-[100vh] max-w-[448px] flex-col bg-white'
     >
       <Toast />
-      <Metrics />
       <CommonModal />
-      <OtpLogin />
-      {isPWA() ? <PWA>{children}</PWA> : <Default>{children}</Default>}
+      <PWA>{children}</PWA>
     </Container>
   );
 }

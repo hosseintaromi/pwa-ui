@@ -6,7 +6,6 @@ import '../styles/index.css';
 import { isPWA } from '@/lib/helper';
 
 import Layout, { danaFont } from '@/components/layout';
-import TopLoader from '@/components/layout/@shared/top-loader';
 import { metadata as PWAMetadata } from '@/components/layout/pwa/meta';
 
 import ReactQueryClientContext from '@/@core/contexts/react-query-client-context';
@@ -28,7 +27,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang='fa-IR' dir='rtl'>
       <body className={danaFont.className}>
-        <TopLoader />
         <ReactQueryClientContext>
           <Layout>{children}</Layout>
         </ReactQueryClientContext>

@@ -1,3 +1,3 @@
-export const POST_LOGIN = 'post-login';
-export const POST_OTP = 'post-otp';
-
+export const QUERY_KEYS = {
+  GET_SAMPLE_KEY: 'get_sample_key',
+};

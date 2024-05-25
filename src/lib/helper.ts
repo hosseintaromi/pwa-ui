@@ -101,8 +101,6 @@ export function getPWARoute(route: string): string {
 export function clearTokens() {
   deleteFromLocalStorage(StorageKey.TOKEN);
   Cookies.remove(StorageKey.TOKEN);
-  Cookies.remove(StorageKey.AUTH_TOKEN_LOCAL);
-  Cookies.remove(StorageKey.REQUESTED_WITH);
 }
 
 export function persianDateGenerator(date: Date) {

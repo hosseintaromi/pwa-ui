@@ -1,19 +1,19 @@
 import { type NextRequest, NextResponse } from 'next/server';
 
-import { HOME_PAGE, SPLASH } from '@/constant/routes';
+import { HOME_PAGE } from '@/constant/routes';
 
 export async function middleware(request: NextRequest) {
-  const { url } = request;
-  const hasToken = request.cookies.get('token')?.value;
-  if (request.url.indexOf(SPLASH) > -1) {
-    if (hasToken) {
-      return NextResponse.redirect(new URL(HOME_PAGE, url));
-    }
-    return NextResponse.next();
-  }
-  if (!hasToken) {
-    return NextResponse.redirect(new URL('/splash/', url));
-  }
+  // const { url } = request;
+  // const hasToken = request.cookies.get('token')?.value;
+  // if (request.url.indexOf(SPLASH) > -1) {
+  //   if (hasToken) {
+  //     return NextResponse.redirect(new URL(HOME_PAGE, url));
+  //   }
+  //   return NextResponse.next();
+  // }
+  // if (!hasToken) {
+  //   return NextResponse.redirect(new URL('/', url));
+  // }
   return NextResponse.next();
 }
 
