@@ -1,5 +1,4 @@
 'use client';
-import { init } from '@metrixorg/websdk';
 import { useEffect } from 'react';
 
 export default function GtMetrics() {
@@ -9,4 +8,3 @@ export default function GtMetrics() {
   return null;
 }
 
-export { newEvent } from '@metrixorg/websdk';
