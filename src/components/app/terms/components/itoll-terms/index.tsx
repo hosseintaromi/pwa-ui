@@ -2,16 +2,10 @@ import { Card, Content, Text } from '@/components/app/terms/components/@shared/b
 
 import { pageLevelLocalization } from '@/constant/localization';
 
-const { terms: termsLocalization } = pageLevelLocalization;
-
-export default function ItollTerms() {
+export default function AppTerms() {
   return (
     <Card>
-      <Content title={termsLocalization.itollTerms.title}>
-        {termsLocalization.itollTerms.terms.map((item, index) => (
-          <Text key={index}>{item}</Text>
-        ))}
-      </Content>
+      terms
     </Card>
   );
 }

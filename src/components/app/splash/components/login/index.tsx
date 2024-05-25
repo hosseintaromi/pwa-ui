@@ -33,7 +33,7 @@ export default function Login() {
           }
           width={325}
           height={100}
-          alt={localization.itoll}
+          alt={localization.app}
         />
       </Container>
     </Container>

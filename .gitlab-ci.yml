@@ -36,7 +36,7 @@ build-image-dev:
   script:
     - echo "$GITLAB_REGISTRY_WRITE_TOKEN" | podman login registry.kian.group -u "$GITLAB_REGISTRY_USERNAME" --password-stdin
     - echo "$APP_MIRROR_TOKEN" | podman login repo.app.ir -u "$APP_MIRROR_USERNAME" --password-stdin
-    - podman build -t registry.kian.group/app/app-ui/dev:${CI_COMMIT_SHA} --build-arg NEXT_PUBLIC_API_URL=https://app-debt-dev.itoll.rocks/api --build-arg NEXT_PUBLIC_CLIENT_ID=2 --build-arg NEXT_PUBLIC_CLIENT_SECRET=LvG6MWs8iPynSiuQc5VnioTZ3UIDYIx1NgULNrgD --squash --omit-history .
+    - podman build -t registry.kian.group/app/app-ui/dev:${CI_COMMIT_SHA} --build-arg NEXT_PUBLIC_API_URL=https://app-debt-dev.app.rocks/api --build-arg NEXT_PUBLIC_CLIENT_ID=2 --build-arg NEXT_PUBLIC_CLIENT_SECRET=LvG6MWs8iPynSiuQc5VnioTZ3UIDYIx1NgULNrgD --squash --omit-history .
     - podman push registry.kian.group/app/app-ui/dev:${CI_COMMIT_SHA}
   only:
     - dev@app/app-ui
