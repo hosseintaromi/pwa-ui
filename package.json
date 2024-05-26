@@ -43,7 +43,6 @@
     "highcharts": "11.4.1",
     "highcharts-react-official": "3.2.1",
     "holy-loader": "2.2.10",
-    "husky": "^9.0.11",
     "js-cookie": "3.0.5",
     "js-sha1": "0.7.0",
     "mobile-detect": "1.4.5",
@@ -82,7 +81,9 @@
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.14",
     "tailwindcss": "3.4.3",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "husky": "7.0.0",
+    "lint-staged": "13.0.3"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
