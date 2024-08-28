@@ -1,5 +1,4 @@
 import { Metadata, Viewport } from 'next';
-import { ReactNode } from 'react';
 
 import '../styles/index.css';
 
